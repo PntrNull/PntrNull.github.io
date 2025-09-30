@@ -7,10 +7,13 @@ body {
     background-color: whitesmoke;
 }
 
+/* 主要内容会展示在标签为 main 的 div 中 */
 #main {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 10%;
     margin-right: 10%;
+
+    border-radius: 10px;
     background-color: white;
 }
