@@ -9,6 +9,8 @@ body {
 
 /* 主要内容会展示在标签为 main 的 div 中 */
 #main {
+    animation-duration: 10s;
+    animation-name: jumpout;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 10%;
@@ -16,4 +18,8 @@ body {
 
     border-radius: 10px;
     background-color: white;
+}
+
+@keyframes jumpout {
+    
 }
