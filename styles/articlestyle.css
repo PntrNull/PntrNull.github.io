@@ -1,0 +1,47 @@
+
+body {
+    font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    background-color: whitesmoke;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+}
+
+hr {
+    border-color: whitesmoke;
+}
+
+/* 主要内容会展示在标签为 main 的 div 中 */
+#main {
+    max-width: 768px;
+    margin: 2em auto 2em;
+    padding: 2em 5% 2em 5%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    #main {
+        margin: 2em 5% 2em;
+    }
+}
+
+#main * {
+    animation-duration: 1.5s;
+    animation-name: emerge;
+}
+
+@keyframes emerge {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
