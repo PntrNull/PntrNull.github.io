@@ -1,8 +1,8 @@
-
+/* lightstyle.css */
 body {
     font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
-    background-color: whitesmoke;
-}
+    background-color: whitesmoke; /* 基底色 */
+} 
 
 h2 {
     font-size: 24px;
@@ -15,10 +15,10 @@ p {
 
 hr {
     border-color: whitesmoke;
-}
+} /* 分割线还得自己再做一遍? */
 
-/* 主要内容会展示在标签为 main 的 div 中 */
-#main {
+/* 主要内容会展示在标签为 content 的 div 中 */
+#content {
     max-width: 768px;
     margin: 2em auto 2em;
     padding: 2em 5% 2em 5%;
@@ -32,11 +32,13 @@ hr {
     }
 }
 
-#main * {
-    animation-duration: 1.5s;
+/* 给content加上浮现动画 */
+#content * {
+    animation-duration: 1s;
     animation-name: emerge;
 }
 
+/* 浮现动画 */
 @keyframes emerge {
     from {
         opacity: 0;
@@ -44,4 +46,16 @@ hr {
     to {
         opacity: 1;
     }
+}
+
+/* 表格样式, 主要是给 thstatus.html 用的 */
+/* TODO: 把表格样式优化一下 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+th,
+td {
+    padding: 5px;
+    border: 1px solid black;
 }
