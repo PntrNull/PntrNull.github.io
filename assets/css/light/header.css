@@ -1,0 +1,22 @@
+/* header.css */
+
+header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid lightgray;
+    padding: 0.5em;
+    font-size: 14;
+}
+
+.mainpage_link {
+    margin: 0 2em 0 0;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+
+.nav_link {
+    margin: 0 0.5em 0;
+    text-decoration: none;
+    color: black;
+}
