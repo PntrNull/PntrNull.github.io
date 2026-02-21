@@ -1,0 +1,30 @@
+<!-- 页面模板 -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=divice-width" />
+    <title> {{ page.title }} - PntrNull's Blog </title> <!-- 标题 -->
+    <link href="/assets/css/light/overall.css" rel="stylesheet" />
+    <link href="/assets/css/light/header.css" rel="stylesheet" />
+    <link href="/assets/css/light/content.css" rel="stylesheet" />
+    <link href="/assets/css/light/footer.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- 头部 -->
+    {% include header.html %}
+    <!-- 内容 -->
+    <div id="content">
+        {{ content }}
+    </div>
+    <!-- 尾部 -->
+    {% include footer.html %}
+    <!-- TODO: 如果 content 不够长, footer 就不会在页面底部 -->
+    <!-- TODO: 什么时候把评论引进一下, 那个 Gitment 看着挺不错的 -->
+</body>
+
+</html>
